@@ -1,0 +1,23 @@
+# Hugo build output
+/resources/_gen/
+.hugo_build.lock
+hugo_stats.json
+
+# Environment
+.env
+*.log
+
+# Editor backup files
+*~
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+.Trashes
+.Spotlight-V100
+Icon?
+
+# Windows
+Thumbs.db
+ehthumbs.db

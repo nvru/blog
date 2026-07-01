@@ -1,0 +1,66 @@
+baseURL = "https://nvru.github.io/"
+locale = "en-US"
+title = "My Blog"
+theme = "hugo-blog-awesome"
+
+enableEmoji = true
+defaultContentLanguage = "en"
+ignoreErrors = ["additional-script-loading-error"]
+
+[params]
+
+  # Site info
+  sitename = "My Blog"
+  defaultColor = "dark"
+  description = "CTF writeups, hacking notes, and walkthroughs."
+
+  # TOC
+  toc = true
+  tocOpen = false
+
+  # UI options
+  goToTop = true
+
+  # Author section 
+  [params.author]
+    name = "null void root"
+    intro = "Learner | Pentester | CTF Player"
+    description = "I document my CTF machines and pentesting practice."
+    avatar = "profile.png"
+
+# Social icons
+[[params.socialIcons]]
+name = "codeberg"
+url = "https://codeberg.org/vru"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/nvru"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://linkedin.com/in/abdullah-keitut-880a09385"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    pageRef = "/"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    name = "Posts"
+    pageRef = "posts"
+    url = "/posts/"
+    weight = 20
+
+  [[menu.main]]
+    name = "About"
+    pageRef = "about"
+    url = "/about/"
+    weight = 30

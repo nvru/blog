@@ -1,0 +1,4 @@
+[submodule "nvru/public"]
+	path = nvru/public
+	url = git@github.com:nvru/nvru.github.io.git
+	branch = main
