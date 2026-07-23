@@ -1,6 +1,6 @@
 baseURL = "https://nvru.github.io/"
 locale = "en-US"
-title = "My Blog"
+title = "Null Blog"
 theme = "hugo-blog-awesome"
 
 enableEmoji = true
@@ -10,7 +10,7 @@ ignoreErrors = ["additional-script-loading-error"]
 [params]
 
   # Site info
-  sitename = "My Blog"
+  sitename = "Null Blog"
   defaultColor = "dark"
   description = "CTF writeups, hacking notes, and walkthroughs."
 
@@ -24,7 +24,7 @@ ignoreErrors = ["additional-script-loading-error"]
   # Author section 
   [params.author]
     name = "null void root"
-    intro = "Learner | Pentester | CTF Player"
+    intro = "Pentester | CTF Player | Unix Admin"
     description = "I document my CTF machines and pentesting practice."
     avatar = "profile.png"
 
@@ -41,26 +41,62 @@ url = "https://github.com/nvru"
 name = "linkedin"
 url = "https://linkedin.com/in/abdullah-keitut-880a09385"
 
+[[params.socialIcons]]
+name = "tryhackme"
+url = "https://tryhackme.com/p/nvru"
+
+[[params.socialIcons]]
+name = "hackthebox"
+url = "https://profile.hackthebox.com/profile/019e8425-94eb-701e-888d-be3a8a788876"
+
+[[params.socialIcons]]
+name = "hackmyvm"
+url = "https://hackmyvm.eu/public/?u=vru"
+
 [markup]
   [markup.goldmark.renderer]
     unsafe = true
 
 [menu]
+	[[menu.main]]
+	  name = "Home"
+	  pageRef = "/"
+	  url = "/"
+	  weight = 10
 
-  [[menu.main]]
-    name = "Home"
-    pageRef = "/"
-    url = "/"
-    weight = 10
+	[[menu.main]]
+	  name = "Walkthroughs"
+	  pageRef = "walkthrough"
+	  url = "/walkthrough/"
+	  weight = 20
 
-  [[menu.main]]
-    name = "Posts"
-    pageRef = "posts"
-    url = "/posts/"
-    weight = 20
+	[[menu.main]]
+	  name = "Nix"
+	  pageRef = "nix"
+	  rl = "/nix/"
+	  weight = 30
 
-  [[menu.main]]
-    name = "About"
-    pageRef = "about"
-    url = "/about/"
-    weight = 30
+	[[menu.main]]
+	  name = "Windows"
+	  pageRef = "windows"
+	  url = "/windows/"
+	  weight = 40
+
+	[[menu.main]]
+	  name = "Techniques"
+	  pageRef = "techniques"
+	  url = "/techniques/"
+	  weight = 50
+
+	[[menu.main]]
+	  name = "Tools"
+	  pageRef = "tools"
+	  url = "/tools/"
+	  weight = 60
+
+	[[menu.main]]
+	  name = "About"
+	  pageRef = "about"
+	  url = "/about/"
+	  weight = 70
+

@@ -2,3 +2,6 @@
 	path = nvru/public
 	url = git@github.com:nvru/nvru.github.io.git
 	branch = main
+[submodule "nvru/themes/hugo-blog-awesome"]
+	path = nvru/themes/hugo-blog-awesome
+	url = https://github.com/hugo-sid/hugo-blog-awesome
